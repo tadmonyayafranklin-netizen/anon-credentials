@@ -1,0 +1,15 @@
+[package]
+name = "anon-credentials"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+k256 = "0.12"           # ECDSA over secp256k1
+sha2 = "0.10"           # SHA-256 hashing
+rand_core = "0.6"       # Random number generator core
+
+[dev-dependencies]
+criterion = "0.4"       # Benchmarking library
+
+[profile.release]
+opt-level = 3
