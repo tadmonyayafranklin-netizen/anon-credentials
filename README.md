@@ -13,7 +13,6 @@ Contents
 - [Getting started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Building from source](#building-from-source)
-  - [Using the crate in your project](#using-the-crate-in-your-project)
 - [Examples](#examples)
   - [High-level flow](#high-level-flow)
   - [Minimal code examples](#minimal-code-examples)
@@ -87,32 +86,6 @@ cargo test
 
 ```bash
 cargo run --example basic_issue_and_prove
-```
-
-### Using the crate in your project
-
-If the crate is published to crates.io (replace `anon-credentials` with the published name):
-
-```toml
-# Cargo.toml
-[dependencies]
-anon-credentials = "0.1"
-```
-
-To use the local repository directly during development:
-
-```toml
-# Cargo.toml
-[dependencies]
-anon-credentials = { path = "../path/to/anon-credentials" }
-```
-
-Then in your code:
-
-```rust
-use anon_credentials::{Issuer, Holder, Verifier, CredentialRequest, PresentationRequest};
-
-// Example types and functions are illustrative — check the crate docs for the exact API.
 ```
 
 ## Examples
